@@ -9,15 +9,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Document</title>
+  <style>
+    body {
+      font-family: "Syne";
+    }
+    .h-fill-available {
+      height: -webkit-fill-available;
+    }
+    .w-fill-available {
+      width: -webkit-fill-available;
+    }
+  </style>
 </head>
 <body>
-  <div class='relative'>
-    <img src="assets/images/heroBg2.png" alt="background">
-    <div class='absolute top-[8.75rem] z-10 pt-[5.625rem] pb-[3.75rem] px-[4.6875rem] flex justify-center w-full'>
-      <div class='w-[35.625rem]'>
-        <h2 class='text-[1.625rem] font-normal leading-10 text-[#F6FE92]'>Juhuu!<span class='text-bold'> 🥳</span></h2>
-        <img src="assets/svgs/tick.svg" alt="tick">
-        <p class='text-[1.5rem] font-normal leading-[1.8rem] text-center'>Dein Upload war erfolgreich. Du kannst dein Startup jetzt im Listing sehen</p>
+  <div class='relative w-full min-h-screen'>
+    <div class='h-[6.25rem]'>this is header</div>
+    <img src="assets/images/heroBg2.png" alt="background" class='w-fill-available h-fill-available fit-cover absolute top-[6.25rem] left-0 z-[-10]'>
+    <div class='flex justify-center items-center w-full h-[calc(100vh-6.25rem)]'>
+      <div class='pt-[5.625rem] pb-[3.75rem] px-[4.6875rem] w-[35.625rem] bg-white/20 border border-white rounded-[0.9375rem]'>
+        <h2 class='text-[1.625rem] font-normal leading-10 text-[#F6FE92] text-center'>Juhuu!<span class='text-bold'> 🥳</span></h2>
+        <img src="assets/svgs/tick.svg" alt="tick" class='mx-auto my-5'>
+        <p class='text-[1.5rem] font-normal leading-[1.8rem] text-center text-white max-w-[25.375rem]'>Dein Upload war erfolgreich. Du kannst dein Startup jetzt im Listing sehen</p>
+        <button class='text-[1.25rem] font-semibold leading-[1.625rem] text-black bg-[#F6FE92] w-full h-[3.375rem] rounded-lg mt-[3.75rem] mb-[1.875rem]'>Zum Listing</button>
+        <button class='text-base font-normal leading-5 text-white w-full'>Zurück zur Bearbeitung</button>
       </div>
     </div>
   </div>

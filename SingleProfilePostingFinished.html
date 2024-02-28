@@ -9,10 +9,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Document</title>
+  <style>
+    body {
+      font-family: "Syne";
+    }
+    .h-fill-available {
+      height: -webkit-fill-available;
+    }
+    .w-fill-available {
+      width: -webkit-fill-available;
+    }
+  </style>
 </head>
 <body>
   <div class='relative'>
-    <img src="assets/images/heroBg.png" alt="background-image">
+    <img src="assets/images/heroBg.png" alt="background-image" class='w-fill-available'>
     <div class='flex gap-2 absolute -bottom-28 ml-60'>
       <div class='w-[18.125rem] h-[18.125rem] rounded-full bg-black border-[0.3125rem] border-white flex flex-col items-center justify-center gap-3'>
         <h3 class='text-white text-[2rem] font-bold'>Profilfoto</h3>
@@ -46,7 +57,7 @@
     </button>
     <div class='bg-[#FAF8FF] rounded-xl pt-[2.75rem] pr-[7.0625rem] pb-12 pl-8 mt-[6.75rem] mb-9'>
       <h2 class='text-[2rem] font-normal leading-[2.4rem] text-black mb-5'>Name</h2>
-      <ul class='flex gap-[3.125rem] mb-5'>
+      <ul class='flex gap-y-1 gap-x-[3.125rem] flex-wrap mb-5'>
         <li class='flex items-center gap-1.5 text-base font-normal leading-6 text-[#000000B3]'>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M3 14.5C3 14.2239 3.22386 14 3.5 14H12.5C12.7761 14 13 14.2239 13 14.5C13 14.7761 12.7761 15 12.5 15H3.5C3.22386 15 3 14.7761 3 14.5Z" fill="black" fill-opacity="0.7"/>
@@ -82,7 +93,7 @@
       <p class='text-lg font-normal leading-[1.625rem] text-black mb-[3.75rem]'>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
       </p>
-      <ul class='flex gap-[0.9375rem]'>
+      <ul class='flex gap-[0.9375rem] flex-wrap'>
         <li class='text-base font-medium leading-[1.2rem] text-[#9488FD] py-3 px-6 rounded-[2.8125rem] bg-white'>Web design</li>
         <li class='text-base font-medium leading-[1.2rem] text-[#9488FD] py-3 px-6 rounded-[2.8125rem] bg-white'>SEO</li>
         <li class='text-base font-medium leading-[1.2rem] text-[#9488FD] py-3 px-6 rounded-[2.8125rem] bg-white'>Consultancy</li>
@@ -115,10 +126,10 @@
         </li>
       </ul>
       <div class='relative'>
-        <div class='rounded-[1.5625rem] w-full h-[42.0625rem]'>
+        <div class='rounded-[1.5625rem] w-full h-full'>
           <img src="assets/images/videoImage.png" alt="image" class='w-full h-full'>
         </div>
-        <div class='absolute w-full h-full bg-black/25 z-1 top-0 left-0 rounded-[1.5625rem]'></div>
+        <div class='absolute w-full h-fill-available bg-black/25 z-1 top-0 left-0 rounded-[1.5625rem]'></div>
       </div>
     </div>
     <div class='flex justify-between items-center bg-[#FAF8FF] rounded-xl py-8 px-9 my-[6.25rem]'>

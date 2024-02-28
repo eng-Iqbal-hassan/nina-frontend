@@ -13,11 +13,17 @@
     body {
       font-family: "Syne";
     }
+    .h-fill-available {
+      height: -webkit-fill-available;
+    }
+    .w-fill-available {
+      width: -webkit-fill-available;
+    }
   </style>
 </head>
 <body>
   <div class='relative'>
-      <img src="assets/images/heroBg.png" alt="background-image">
+      <img src="assets/images/heroBg.png" alt="background-image" class='w-fill-available'>
       <div class='flex gap-2 absolute -bottom-28 ml-60'>
         <div class='w-[18.125rem] h-[18.125rem] rounded-full bg-black border-[0.3125rem] border-white flex flex-col items-center justify-center gap-3'>
           <h3 class='text-white text-[2rem] font-bold'>Profilbild</h3>
@@ -45,7 +51,7 @@
       </div>
   </div>
   <div class='bg-[#FAF8FF] pt-[9.5rem] pr-[12.0625rem] pb-[4.1875rem] pl-60'>
-    <div class='flex justify-between'>
+    <div class='flex justify-between gap-10'>
       <div class='w-[39.25rem] flex flex-col gap-6'>
         <input type="text" placeholder='Dein Name*' class='w-full h-[2.875rem] border border-[#747474] rounded-lg py-[0.875rem] px-6 flex items-center justify-between text-base font-normal leading-[1.205rem] text-black outline-none'>
         <div class='flex items-center gap-2'>
@@ -79,7 +85,7 @@
     </div>
     <div class='mt-[1.4375rem] mb-7'>
       <h4 class='text-base font-normal leading-[1.205rem] text-black mb-2'>Deine Skills*</h4>
-      <ul class='flex gap-4'>
+      <ul class='flex gap-4 flex-wrap'>
         <li class='flex items-center gap-2.5 py-3 px-6 bg-white rounded-[2.8125rem]'>
           Digital Marketing
           <div class='w-[1.625rem] h-[1.625rem] rounded-full bg-[#715E98] flex items-center justify-center'>
@@ -185,10 +191,10 @@
       </li>
     </ul>
     <div class='relative mb-[11.25rem]'>
-      <div class='rounded-[1.5625rem] w-full h-[42.0625rem]'>
+      <div class='rounded-[1.5625rem] w-full h-full'>
         <img src="assets/images/videoImage.png" alt="image">
       </div>
-      <div class='absolute w-full h-[42.0625rem] bg-black/25 z-1 top-0 left-0 rounded-[1.5625rem]'></div>
+      <div class='absolute w-full h-fill-available bg-black/25 z-1 top-0 left-0 rounded-[1.5625rem]'></div>
       <div class='w-16 h-16 bg-[#E9ECF5] rounded-full flex items-center justify-center absolute top-1/2 left-1/2'>
         <img src="assets/svgs/downloadIcon.svg" alt="downloadIcon">
       </div>
