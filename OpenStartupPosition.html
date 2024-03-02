@@ -29,10 +29,51 @@
     <p class='pt-2.5 pb-7 text-lg font-medium leading-7 text-white'>
       Du suchst MitgründerInnen? Hier findest du alle Profile, die derzeit nach Co-Founder Rollen suchen.
     </p>
-    <button class='w-[17rem] h-[3.375rem] bg-[#F6FE92] rounded-lg text-xl font-semibold leading-[1.625rem] text-[#121212] flex items-center gap-2.5 justify-center'>
+    <button id="openModalBtn" class='w-[17rem] h-[3.375rem] bg-[#F6FE92] rounded-lg text-xl font-semibold leading-[1.625rem] text-[#121212] flex items-center gap-2.5 justify-center'>
       Inseriere dein Profil
       <img src="assets/svgs/rightArrow.svg" alt="">
     </button>
+    <div id="myModal" class="modal hidden fixed z-1 left-0 top-0 w-full h-full overflow-auto bg-[#000000b3] pt-[3.75rem]">
+
+      <!-- Modal content -->
+
+      <!-- Basic Modal -->
+      <!-- <div class="modal-content bg-[#FAF8FF] fixed inset-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-fit w-[67%] py-[3.75rem] px-5 rounded-xl">
+        <span class="close absolute top-[2.375rem] right-[2.375rem]">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="26.6032" height="26.57" rx="13.285" fill="black"/>
+          <path d="M18.8206 10.1026C18.9089 10.0174 18.9794 9.91537 19.0279 9.80256C19.0765 9.68975 19.102 9.56841 19.1032 9.44561C19.1043 9.32282 19.0809 9.20103 19.0345 9.08735C18.9881 8.97367 18.9194 8.87038 18.8326 8.78351C18.7458 8.69664 18.6426 8.62792 18.529 8.58136C18.4154 8.53481 18.2936 8.51135 18.1708 8.51236C18.048 8.51337 17.9266 8.53883 17.8138 8.58724C17.7009 8.63565 17.5988 8.70606 17.5135 8.79435L13.8068 12.4998L10.1014 8.79435C10.0168 8.70349 9.91465 8.63061 9.80121 8.58006C9.68777 8.52951 9.5653 8.50233 9.44113 8.50014C9.31695 8.49795 9.19361 8.5208 9.07845 8.56731C8.9633 8.61382 8.85869 8.68305 8.77087 8.77087C8.68305 8.85869 8.61382 8.9633 8.56731 9.07845C8.5208 9.19361 8.49795 9.31695 8.50014 9.44113C8.50233 9.5653 8.52951 9.68776 8.58006 9.80121C8.63061 9.91465 8.70349 10.0168 8.79435 10.1014L12.4973 13.8081L8.79188 17.5135C8.62852 17.6888 8.53959 17.9207 8.54382 18.1603C8.54804 18.3999 8.6451 18.6285 8.81454 18.7979C8.98399 18.9673 9.21258 19.0644 9.45217 19.0686C9.69176 19.0728 9.92364 18.9839 10.099 18.8206L13.8068 15.1151L17.5123 18.8218C17.6876 18.9851 17.9194 19.0741 18.159 19.0699C18.3986 19.0656 18.6272 18.9686 18.7967 18.7991C18.9661 18.6297 19.0632 18.4011 19.0674 18.1615C19.0716 17.9219 18.9827 17.69 18.8193 17.5147L15.1164 13.8081L18.8206 10.1026Z" fill="white"/>
+          </svg>
+        </span>
+
+        <p class='text-[2rem] font-semibold leading-[2.4rem] text-[#25324B] mb-[5.5rem] text-center'>Willst du dein Profil teilen, um dich als Co-Founder zu bewerben?</p>
+        <div class='flex gap-[2.125rem] justify-center'>
+          <button class='w-[20rem] h-[3.375rem] bg-[#F6FE92] rounded-lg text-xl font-semibold leading-[1.625rem] text-black'>Abbrechen</button>
+          <button class='w-[20rem] h-[3.375rem] bg-[#F6FE92] rounded-lg text-xl font-semibold leading-[1.625rem] text-black'>Ja, ich möchte es teilen</button>
+        </div>
+
+        <p class='text-[2rem] font-semibold leading-[2.4rem] text-[#25324B] mb-12 text-center'>Juhuu! 🥳 Dein Profil teilen erfolgreich</p>
+        <div class='flex justify-center'><img src="/assets/svgs/tickDark.svg" alt="tick"></div>
+      </div> -->
+
+      <!-- Text Area Modal -->
+      <div class="modal-content bg-[#FAF8FF] fixed inset-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[35.75rem] w-[41.8125rem] pt-[4.3125rem] pb-[4.9375rem] pl-[5.6875rem] pr-[3.625rem] rounded-xl">
+        <span class="close absolute top-[2.625rem] right-4">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="26.6032" height="26.57" rx="13.285" fill="black"/>
+          <path d="M18.8206 10.1026C18.9089 10.0174 18.9794 9.91537 19.0279 9.80256C19.0765 9.68975 19.102 9.56841 19.1032 9.44561C19.1043 9.32282 19.0809 9.20103 19.0345 9.08735C18.9881 8.97367 18.9194 8.87038 18.8326 8.78351C18.7458 8.69664 18.6426 8.62792 18.529 8.58136C18.4154 8.53481 18.2936 8.51135 18.1708 8.51236C18.048 8.51337 17.9266 8.53883 17.8138 8.58724C17.7009 8.63565 17.5988 8.70606 17.5135 8.79435L13.8068 12.4998L10.1014 8.79435C10.0168 8.70349 9.91465 8.63061 9.80121 8.58006C9.68777 8.52951 9.5653 8.50233 9.44113 8.50014C9.31695 8.49795 9.19361 8.5208 9.07845 8.56731C8.9633 8.61382 8.85869 8.68305 8.77087 8.77087C8.68305 8.85869 8.61382 8.9633 8.56731 9.07845C8.5208 9.19361 8.49795 9.31695 8.50014 9.44113C8.50233 9.5653 8.52951 9.68776 8.58006 9.80121C8.63061 9.91465 8.70349 10.0168 8.79435 10.1014L12.4973 13.8081L8.79188 17.5135C8.62852 17.6888 8.53959 17.9207 8.54382 18.1603C8.54804 18.3999 8.6451 18.6285 8.81454 18.7979C8.98399 18.9673 9.21258 19.0644 9.45217 19.0686C9.69176 19.0728 9.92364 18.9839 10.099 18.8206L13.8068 15.1151L17.5123 18.8218C17.6876 18.9851 17.9194 19.0741 18.159 19.0699C18.3986 19.0656 18.6272 18.9686 18.7967 18.7991C18.9661 18.6297 19.0632 18.4011 19.0674 18.1615C19.0716 17.9219 18.9827 17.69 18.8193 17.5147L15.1164 13.8081L18.8206 10.1026Z" fill="white"/>
+          </svg>
+        </span>
+        <h2 class='text-[2rem] font-bold leading-[2.4rem] text-[#25324B] text-center mb-[4.625rem]'>Kontaktformular</h2>
+        <p class='text-2xl font-medium leading-10 text-black mb-6 text-center'>Hast du Interesse an einer Zusammenarbeit? 
+          Kontaktiere jetzt den Co-Founder!</p>
+        <textarea placeholder='Tippe hier deine Nachricht ein.' class='h-[7.9375rem] w-full outline-none p-3 text-base font-normal leading-[1.625rem] text-black'></textarea>
+        <button class='w-full h-[3.375rem] bg-[#F6FE92] rounded-lg text-xl font-semibold leading-[1.625rem] text-black flex justify-center items-center gap-2.5 mt-[1.5625rem]'>
+          Kontaktieren
+          <img src="assets/svgs/rightArrow.svg" alt="rightArrow">
+        </button>
+      </div>
+    </div>
     <div class='absolute top-0 left-0 -z-10 w-full h-full'>
       <img src="assets/images/heroBg.png" alt="background-image" class='w-full h-full fit-cover'>
     </div>
@@ -99,7 +140,8 @@
       <h3 class='text-xl font-bold leading-[1.875rem] text-[#141414]'>📨  Schreib mir bei neuen Profilen</h3>
       <p class='text-sm font-normal leading-[1.3125rem] text-[#141414CC]'>Werde als erstes benachrichtigt, sobald neue Jobs online sind!</p>
       <input type="email" name="" id="" placeholder='name@mail.com' class='w-full h-10 border border-[#14141433] rounded outline-none pl-3 placeholder:text-[#14141480] text-[#141414] text-base font-normal'>
-      <button class='w-full h-10 text-white bg-[#715E98] text-base font-medium rounded'>Subcribe</button>
+      <button id="openModalBtn1"  class='w-full h-10 text-white bg-[#715E98] text-base font-medium rounded'>Subscribe</button> 
+    </div>
     </div>
   </div>
   <div class='mt-[3.125rem] px-[15.625rem] mb-[3.25rem]'>
@@ -391,5 +433,41 @@
       </svg>
     </li>
   </ul>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("openModalBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    var modal1 = document.getElementById("myModal1");
+    
+    // Get the button that opens the modal
+    var btn1 = document.getElementById("openModalBtn1");
+    
+    // Get the <span> element that closes the modal
+    var span1 = document.getElementsByClassName("close1")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    </script>
 </body>
 </html>
