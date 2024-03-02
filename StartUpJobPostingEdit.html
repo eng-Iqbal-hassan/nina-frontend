@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+  <style>
+    body {
+      font-family: "Syne";
+    }
+    .h-fill-available {
+      height: -webkit-fill-available;
+    }
+    .w-fill-available {
+      width: -webkit-fill-available;
+    }
+  </style>
+</head>
+<body>
+  <div class='relative'>
+      <img src="assets/images/heroBg.png" alt="background-image" class='w-fill-available'>
+      <div class='flex gap-2 absolute -bottom-28 ml-60'>
+        <div class='w-[18.125rem] h-[18.125rem] rounded-full bg-black border-[0.3125rem] border-white flex flex-col items-center justify-center gap-3'>
+          <h3 class='text-white text-[2rem] font-bold w-[8.25rem] text-center'>Startup Logo</h3>
+          <div class='w-[3.75rem] h-[3.75rem] rounded-full bg-[#E9ECF5] flex items-center justify-center'>
+            <img src="assets/svgs/downloadIcon.svg" alt="downloadIcon">
+          </div>
+        </div>
+        <ul class='flex gap-2.5 mt-[12.0625rem]'>
+          <li>
+            <a href="#" class='flex items-center justify-center w-[2.375rem] h-[2.375rem] rounded-full bg-white'>
+              <img src="assets/svgs/socialMedia1.svg" alt="socialMedia">
+            </a>
+          </li>
+          <li>
+            <a href="#" class='flex items-center justify-center w-[2.375rem] h-[2.375rem] rounded-full bg-white'>
+              <img src="assets/svgs/socialMedia2.svg" alt="socialMedia">
+            </a>
+          </li>
+          <li>
+            <a href="#" class='flex items-center justify-center w-[2.375rem] h-[2.375rem] rounded-full bg-white'>
+              <img src="assets/svgs/socialMedia3.svg" alt="socialMedia">
+            </a>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class='bg-[#FAF8FF] pt-[9.5rem] pr-[12.0625rem] pb-[4.1875rem] pl-60'>
+    <div class='flex justify-between gap-10'>
+      <div class='w-[39.25rem] flex flex-col gap-6'>
+        <input type="text" placeholder='Dein Name*' class='w-full h-[2.875rem] border border-[#747474] rounded-lg py-[0.875rem] px-6 flex items-center justify-between text-base font-normal leading-[1.205rem] text-black outline-none'>
+        <div class='flex items-center gap-2'>
+          <div class='w-[8.625rem] h-[2.875rem] border border-[#747474] rounded-[2.8125rem] text-base font-medium leading-[1.205rem] text-black flex items-center justify-between py-3 px-6 bg-white'>
+            Position
+            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.63969 6.73281L10.491 1.6412C10.572 1.55624 10.6172 1.44337 10.6172 1.326C10.6172 1.20863 10.572 1.09576 10.491 1.0108L10.4855 1.00532C10.4463 0.963992 10.399 0.931084 10.3466 0.908596C10.2943 0.886108 10.2379 0.874512 10.1808 0.874512C10.1238 0.874512 10.0674 0.886108 10.0151 0.908596C9.96267 0.931084 9.91542 0.963992 9.87615 1.00532L5.30805 5.8L0.741773 1.00532C0.702512 0.963991 0.655254 0.931083 0.602873 0.908595C0.550492 0.886108 0.494085 0.874511 0.437081 0.874511C0.380077 0.874511 0.323669 0.886107 0.271288 0.908595C0.218908 0.931083 0.171649 0.963991 0.132389 1.00532L0.126906 1.0108C0.045919 1.09576 0.000738639 1.20863 0.000738629 1.326C0.000738619 1.44337 0.0459189 1.55624 0.126906 1.6412L4.97823 6.73281C5.0209 6.77759 5.07221 6.81324 5.12906 6.83759C5.18591 6.86195 5.24711 6.87451 5.30896 6.87451C5.37081 6.87451 5.43202 6.86195 5.48887 6.83759C5.54572 6.81324 5.59703 6.77759 5.63969 6.73281Z" fill="black"/>
+            </svg>
+          </div>
+          <p class='text-base font-normal leading-[1.625rem] text-black whitespace-nowrap'>
+            Position, du du gerne übernehmen möchtest (Mehrauswahl möglich)*
+          </p>
+        </div>
+        <div class='w-full h-[2.875rem] border border-[#747474] rounded-lg py-[0.875rem] px-6 flex items-center justify-between text-base font-normal leading-[1.205rem] text-black bg-white'>
+          Jobbezeichnung - Geb die Position ein, die besetzt werden soll*
+        </div>
+        <div class='w-full h-[2.875rem] border border-[#747474] rounded-lg py-[0.875rem] px-6 flex items-center justify-between text-base font-normal leading-[1.205rem] text-black bg-white'>
+          Art der Beschäftigung*
+          <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.63969 6.73281L10.491 1.6412C10.572 1.55624 10.6172 1.44337 10.6172 1.326C10.6172 1.20863 10.572 1.09576 10.491 1.0108L10.4855 1.00532C10.4463 0.963992 10.399 0.931084 10.3466 0.908596C10.2943 0.886108 10.2379 0.874512 10.1808 0.874512C10.1238 0.874512 10.0674 0.886108 10.0151 0.908596C9.96267 0.931084 9.91542 0.963992 9.87615 1.00532L5.30805 5.8L0.741773 1.00532C0.702512 0.963991 0.655254 0.931083 0.602873 0.908595C0.550492 0.886108 0.494085 0.874511 0.437081 0.874511C0.380077 0.874511 0.323669 0.886107 0.271288 0.908595C0.218908 0.931083 0.171649 0.963991 0.132389 1.00532L0.126906 1.0108C0.045919 1.09576 0.000738639 1.20863 0.000738629 1.326C0.000738619 1.44337 0.0459189 1.55624 0.126906 1.6412L4.97823 6.73281C5.0209 6.77759 5.07221 6.81324 5.12906 6.83759C5.18591 6.86195 5.24711 6.87451 5.30896 6.87451C5.37081 6.87451 5.43202 6.86195 5.48887 6.83759C5.54572 6.81324 5.59703 6.77759 5.63969 6.73281Z" fill="black"/>
+          </svg>
+        </div>
+        <div class='w-full h-[2.875rem] border border-[#747474] rounded-lg py-[0.875rem] px-6 flex items-center justify-between text-base font-normal leading-[1.205rem] text-black bg-white'>
+          Gehaltsangabe oder Anteile, die der Mitarbeiter erhält*
+        </div>
+        <div class='w-full h-[2.875rem] border border-[#747474] rounded-lg py-[0.875rem] px-6 flex items-center justify-between text-base font-normal leading-[1.205rem] text-black bg-white'>
+          Gehaltsangabe oder Anteile, die der Mitarbeiter erhält*
+          <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.63969 6.73281L10.491 1.6412C10.572 1.55624 10.6172 1.44337 10.6172 1.326C10.6172 1.20863 10.572 1.09576 10.491 1.0108L10.4855 1.00532C10.4463 0.963992 10.399 0.931084 10.3466 0.908596C10.2943 0.886108 10.2379 0.874512 10.1808 0.874512C10.1238 0.874512 10.0674 0.886108 10.0151 0.908596C9.96267 0.931084 9.91542 0.963992 9.87615 1.00532L5.30805 5.8L0.741773 1.00532C0.702512 0.963991 0.655254 0.931083 0.602873 0.908595C0.550492 0.886108 0.494085 0.874511 0.437081 0.874511C0.380077 0.874511 0.323669 0.886107 0.271288 0.908595C0.218908 0.931083 0.171649 0.963991 0.132389 1.00532L0.126906 1.0108C0.045919 1.09576 0.000738639 1.20863 0.000738629 1.326C0.000738619 1.44337 0.0459189 1.55624 0.126906 1.6412L4.97823 6.73281C5.0209 6.77759 5.07221 6.81324 5.12906 6.83759C5.18591 6.86195 5.24711 6.87451 5.30896 6.87451C5.37081 6.87451 5.43202 6.86195 5.48887 6.83759C5.54572 6.81324 5.59703 6.77759 5.63969 6.73281Z" fill="black"/>
+          </svg>
+        </div>
+        <div class='flex gap-[0.9375rem]'>
+          <div class='py-3 px-5 flex items-center gap-2 text-base font-medium leading-[1.2rem] text-[#715E98] rounded-[2.8125rem] bg-white shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]'>
+            Biotech
+            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.63969 5.8583L10.491 0.766688C10.572 0.681732 10.6172 0.568862 10.6172 0.451488C10.6172 0.334115 10.572 0.221246 10.491 0.13629L10.4855 0.130808C10.4463 0.0894799 10.399 0.0565719 10.3466 0.0340843C10.2943 0.0115967 10.2379 -3.31627e-08 10.1808 -3.81461e-08C10.1238 -4.31296e-08 10.0674 0.0115966 10.0151 0.0340843C9.96267 0.0565719 9.91542 0.0894799 9.87615 0.130808L5.30805 4.92549L0.741773 0.130807C0.702512 0.0894791 0.655254 0.0565711 0.602873 0.0340834C0.550492 0.0115958 0.494085 -8.8499e-07 0.437081 -8.89973e-07C0.380077 -8.94957e-07 0.323669 0.0115958 0.271288 0.0340834C0.218908 0.0565711 0.171649 0.089479 0.132389 0.130807L0.126906 0.136289C0.045919 0.221245 0.000738639 0.334114 0.000738629 0.451488C0.000738619 0.568861 0.0459189 0.681731 0.126906 0.766687L4.97823 5.8583C5.0209 5.90308 5.07221 5.93872 5.12906 5.96308C5.18591 5.98744 5.24711 6 5.30896 6C5.37081 6 5.43202 5.98744 5.48887 5.96308C5.54572 5.93872 5.59703 5.90308 5.63969 5.8583Z" fill="#715E98"/>
+            </svg>              
+          </div>
+          <div class='py-3 px-5 flex items-center gap-2 text-base font-medium leading-[1.2rem] text-[#715E98] rounded-[2.8125rem] bg-white shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]'>
+            Web design
+            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.63969 5.8583L10.491 0.766688C10.572 0.681732 10.6172 0.568862 10.6172 0.451488C10.6172 0.334115 10.572 0.221246 10.491 0.13629L10.4855 0.130808C10.4463 0.0894799 10.399 0.0565719 10.3466 0.0340843C10.2943 0.0115967 10.2379 -3.31627e-08 10.1808 -3.81461e-08C10.1238 -4.31296e-08 10.0674 0.0115966 10.0151 0.0340843C9.96267 0.0565719 9.91542 0.0894799 9.87615 0.130808L5.30805 4.92549L0.741773 0.130807C0.702512 0.0894791 0.655254 0.0565711 0.602873 0.0340834C0.550492 0.0115958 0.494085 -8.8499e-07 0.437081 -8.89973e-07C0.380077 -8.94957e-07 0.323669 0.0115958 0.271288 0.0340834C0.218908 0.0565711 0.171649 0.089479 0.132389 0.130807L0.126906 0.136289C0.045919 0.221245 0.000738639 0.334114 0.000738629 0.451488C0.000738619 0.568861 0.0459189 0.681731 0.126906 0.766687L4.97823 5.8583C5.0209 5.90308 5.07221 5.93872 5.12906 5.96308C5.18591 5.98744 5.24711 6 5.30896 6C5.37081 6 5.43202 5.98744 5.48887 5.96308C5.54572 5.93872 5.59703 5.90308 5.63969 5.8583Z" fill="#715E98"/>
+            </svg> 
+          </div>
+          <div class='py-3 px-5 flex items-center gap-2 text-base font-medium leading-[1.2rem] text-[#715E98] rounded-[2.8125rem] bg-white shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]'>
+            Web development
+            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.63969 5.8583L10.491 0.766688C10.572 0.681732 10.6172 0.568862 10.6172 0.451488C10.6172 0.334115 10.572 0.221246 10.491 0.13629L10.4855 0.130808C10.4463 0.0894799 10.399 0.0565719 10.3466 0.0340843C10.2943 0.0115967 10.2379 -3.31627e-08 10.1808 -3.81461e-08C10.1238 -4.31296e-08 10.0674 0.0115966 10.0151 0.0340843C9.96267 0.0565719 9.91542 0.0894799 9.87615 0.130808L5.30805 4.92549L0.741773 0.130807C0.702512 0.0894791 0.655254 0.0565711 0.602873 0.0340834C0.550492 0.0115958 0.494085 -8.8499e-07 0.437081 -8.89973e-07C0.380077 -8.94957e-07 0.323669 0.0115958 0.271288 0.0340834C0.218908 0.0565711 0.171649 0.089479 0.132389 0.130807L0.126906 0.136289C0.045919 0.221245 0.000738639 0.334114 0.000738629 0.451488C0.000738619 0.568861 0.0459189 0.681731 0.126906 0.766687L4.97823 5.8583C5.0209 5.90308 5.07221 5.93872 5.12906 5.96308C5.18591 5.98744 5.24711 6 5.30896 6C5.37081 6 5.43202 5.98744 5.48887 5.96308C5.54572 5.93872 5.59703 5.90308 5.63969 5.8583Z" fill="#715E98"/>
+            </svg>              
+          </div>
+        </div>
+      </div>
+      <button class='flex flex-col pt-4 px-[0.6875rem] pb-[1.375rem] text-white bg-[#715E98] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] w-[19.5rem] text-[1.25rem] font-normal leading-[1.875rem] text-left rounded-lg h-fit'>
+        Info: 
+        <span>dieser Bereich erscheint zusätzlich in der Übersichtsseite</span>
+      </button>
+    </div>
+    <div class='py-3 px-5 bg-white border border-[#747474] rounded-lg relative mt-5'>
+      <p class='text-lg font-normal leading-[1.625rem] text-black'>
+        Elevator pitch dein Startup und dich in 2-3 Sätzen! Dieser Text wird in deinem Suchprofil erscheinen, gib dir also Mühe 😉 der Inhalt ist entscheidend für das Interesse deiner Bewerber an deinem Job Posting.*
+      </p>
+      <div class='w-[1.875rem] h-[1.875rem] rounded-full bg-[#715E98] flex items-center justify-center absolute right-3 bottom-2'>
+        <img src="assets/svgs/edit.svg" alt="icon">
+      </div>
+    </div>
+  </div>
+  <div class='pt-[8.625rem] pr-[11.625rem] pb-[7.125rem] pl-60'>
+    <div class='flex justify-between items-center mb-[2.75rem]'>
+      <p class='text-[2.5rem] font-normal leading-[3.75rem]'>✨</p>
+      <button class='flex flex-col pt-4 px-[0.6875rem] pb-[1.375rem] text-white bg-[#715E98] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] w-[19.5rem] text-[1.25rem] font-normal leading-[1.875rem] text-left rounded-lg h-fit'>
+        Info: 
+        <span>dieser Bereich erscheint zusätzlich in der Übersichtsseite</span>
+      </button>
+    </div>
+    <ul class='flex flex-col gap-[3.125rem]'>
+      <li>
+        <h3 class='text-[2rem] font-normal leading-[2.4rem] text-black mb-2'> Meine Ausbildung*</h3>
+        <div class='relative py-[0.875rem] pr-[7.375rem] pl-6 bg-[#FAF8FF] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] rounded-lg'>
+          <p class='text-lg font-normal leading-[1.625rem] text-black'>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          </p>
+          <div class='w-[1.875rem] h-[1.875rem] rounded-full bg-[#715E98] flex items-center justify-center absolute right-3 bottom-2'>
+            <img src="assets/svgd/edit.svg" alt="icon">
+          </div>
+        </div>
+      </li>
+      <li>
+        <h3 class='text-[2rem] font-normal leading-[2.4rem] text-black mb-2'> 
+          Meine bisherigen Berufserfahrungen & Erfahrungen mit Startups*
+        </h3>
+        <div class='relative py-[0.875rem] pr-[7.375rem] pl-6 bg-[#FAF8FF] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] rounded-lg'>
+          <p class='text-lg font-normal leading-[1.625rem] text-black'>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          </p>
+          <div class='w-[1.875rem] h-[1.875rem] rounded-full bg-[#715E98] flex items-center justify-center absolute right-3 bottom-2'>
+            <img src="assets/svgs/edit.svg" alt="icon">
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class='flex gap-[5.375rem] mt-[4.8125rem] mb-[11.0625rem]'>
+      <div class='basis-[46%]'>
+        <div class='mb-[4.5rem]'>
+          <h2 class='text-[2rem] font-normal leading-[2.4rem] text-[#25324B]'>Deine Verantwortungsbereiche*</h2>
+          <ul class='flex flex-col gap-2.5 bg-[#FAF8FF] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] w-full rounded-lg py-5 relative'>
+            <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+              <img src="assets/svgs/tickGreen.svg" alt="tick">
+              ...
+            </li>
+            <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+              <img src="assets/svgs/tickGreen.svg" alt="tick">
+              ...
+            </li>
+            <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+              <img src="assets/svgs/tickGreen.svg" alt="tick">
+              ...
+            </li>
+            <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+              <img src="assets/svgs/tickGreen.svg" alt="tick">
+              ...
+            </li>
+            <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+              <img src="assets/svgs/tickGreen.svg" alt="tick">
+              ...
+            </li>
+            <div class='w-[1.875rem] h-[1.875rem] bg-[#715E98] flex items-center justify-center rounded-full absolute bottom-[0.4375rem] right-1.5'>
+              <img src="assets/svgs/edit.svg" alt="edit">
+            </div>
+          </ul>
+        </div>
+        <div>
+          <h2 class='text-[2rem] font-normal leading-[2.4rem] text-[#25324B]'>Deine Verantwortungsbereiche*</h2>
+          <ul class='flex flex-col gap-2.5 bg-[#FAF8FF] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] w-full rounded-lg py-5 relative'>
+            <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+              <img src="assets/svgs/tickGreen.svg" alt="tick">
+              ...
+            </li>
+            <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+              <img src="assets/svgs/tickGreen.svg" alt="tick">
+              ...
+            </li>
+            <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+              <img src="assets/svgs/tickGreen.svg" alt="tick">
+              ...
+            </li>
+            <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+              <img src="assets/svgs/tickGreen.svg" alt="tick">
+              ...
+            </li>
+            <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+              <img src="assets/svgs/tickGreen.svg" alt="tick">
+              ...
+            </li>
+            <div class='w-[1.875rem] h-[1.875rem] bg-[#715E98] flex items-center justify-center rounded-full absolute bottom-[0.4375rem] right-1.5'>
+              <img src="assets/svgs/edit.svg" alt="edit">
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class='basis-[54%]'>
+        <h2 class='text-[2rem] font-normal leading-[2.4rem] text-[#25324B]'>Deine Verantwortungsbereiche*</h2>
+        <ul class='flex flex-col gap-2.5 bg-[#FAF8FF] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] w-full rounded-lg relative py-[1.375rem] px-4 min-h-[33rem]'>
+          <p class='text-lg font-normal leading-[1.625rem] text-black mb-[7.5rem]'>
+            Versuche auch Details über die Anforderungen an die Rolle niederzuschreiben
+            Wie wird der Gründer kompensiert? Mit Geschäftsanteilen oder mit Lohn?
+          </p>
+          <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+            <img src="assets/svgs/tickGreen.svg" alt="tick">
+            ...
+          </li>
+          <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+            <img src="assets/svgs/tickGreen.svg" alt="tick">
+            ...
+          </li>
+          <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+            <img src="assets/svgs/tickGreen.svg" alt="tick">
+            ...
+          </li>
+          <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+            <img src="assets/svgs/tickGreen.svg" alt="tick">
+            ...
+          </li>
+          <li class='text-base font-normal leading-[1.6rem] text-[#515B6F] flex items-center gap-2.5'>
+            <img src="assets/svgs/tickGreen.svg" alt="tick">
+            ...
+          </li>
+          <div class='w-[1.875rem] h-[1.875rem] bg-[#715E98] flex items-center justify-center rounded-full absolute bottom-[0.4375rem] right-1.5'>
+            <img src="assets/svgs/edit.svg" alt="edit">
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class='mt-[11.0625rem] mb-[10.5625rem]'>
+      <h4 class='text-base font-normal leading-[1.205rem] text-black mb-2'>Deine Skills*</h4>
+      <ul class='flex gap-4 flex-wrap'>
+        <li class='flex items-center gap-2.5 py-3 px-6 bg-[#FAF8FF] rounded-[2.8125rem] text-base font-medium leading-[1.2rem] text-[#715E98]'>
+          Digital Marketing
+          <div class='w-[1.625rem] h-[1.625rem] rounded-full bg-[#715E98] flex items-center justify-center'>
+            <img src="assets/svgs/cross.svg" alt="icon">
+          </div>
+        </li>
+        <li class='flex items-center gap-2.5 py-3 px-6 bg-[#FAF8FF] rounded-[2.8125rem] text-base font-medium leading-[1.2rem] text-[#715E98]'>
+          Google Ads
+          <div class='w-[1.625rem] h-[1.625rem] rounded-full bg-[#715E98] flex items-center justify-center'>
+            <img src="assets/svgs/cross.svg" alt="icon">
+          </div>
+        </li>
+        <li class='flex items-center gap-2.5 py-3 px-6 bg-[#FAF8FF] rounded-[2.8125rem] text-base font-medium leading-[1.2rem] text-[#715E98]'>
+          SaaS
+          <div class='w-[1.625rem] h-[1.625rem] rounded-full bg-[#715E98] flex items-center justify-center'>
+            <img src="assets/svgs/cross.svg" alt="icon">
+          </div>
+        </li>
+        <li class='flex items-center gap-2.5 py-3 px-6 bg-[#FAF8FF] rounded-[2.8125rem] text-base font-medium leading-[1.2rem] text-[#715E98]'>
+          Marketing
+          <div class='w-[1.625rem] h-[1.625rem] rounded-full bg-[#715E98] flex items-center justify-center'>
+            <img src="assets/svgs/cross.svg" alt="icon">
+          </div> 
+        </li>
+        <li class='flex items-center gap-2.5 py-3 px-6 bg-[#FAF8FF] rounded-[2.8125rem] text-base font-medium leading-[1.2rem] text-[#715E98]'>
+          Automation
+          <div class='w-[1.625rem] h-[1.625rem] rounded-full bg-[#715E98] flex items-center justify-center'>
+            <img src="assets/svgs/cross.svg" alt="icon">
+          </div>
+        </li>
+        <li class='flex items-center gap-2.5 py-3 px-6 bg-[#FAF8FF] rounded-[2.8125rem] text-base font-medium leading-[1.2rem] text-[#715E98]'> 
+          SEO
+          <div class='w-[1.625rem] h-[1.625rem] rounded-full bg-[#715E98] flex items-center justify-center'>
+            <img src="assets/svgs/cross.svg" alt="icon">
+          </div>
+        </li>
+        <li class='flex items-center gap-2.5 py-3 px-6 bg-[#FAF8FF] rounded-[2.8125rem] text-base font-medium leading-[1.2rem] text-[#715E98]'>
+          Strategy
+          <div class='w-[1.625rem] h-[1.625rem] rounded-full bg-[#715E98] flex items-center justify-center'>
+            <img src="assets/svgs/cross.svg" alt="icon">
+          </div>
+        </li>
+        <li class='flex items-center gap-2.5 py-3 px-6 bg-[#FAF8FF] rounded-[2.8125rem] text-base font-medium leading-[1.2rem] text-[#715E98]'>
+          ...
+          <div class='w-[1.625rem] h-[1.625rem] rounded-full bg-[#715E98] flex items-center justify-center'>
+            <img src="assets/svgs/edit.svg" alt="icon">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class='relative mb-[11.25rem]'>
+      <div class='rounded-[1.5625rem] w-full h-full'>
+        <img src="assets/images/videoImage.png" alt="image">
+      </div>
+      <div class='absolute w-full h-fill-available bg-black/25 z-1 top-0 left-0 rounded-[1.5625rem]'></div>
+      <div class='absolute top-1/2 transform -translate-y-1/2 flex flex-col items-center justify-center w-full gap-10'>
+      <h2 class='text-[2rem] font-bold leading-[2.4rem] text-white'>Startup Team Foto</h2>
+      <div class='w-16 h-16 bg-[#E9ECF5] rounded-full flex items-center justify-center'>
+        <img src="assets/svgs/downloadIcon.svg" alt="downloadIcon">
+      </div>
+    </div>
+    </div>
+    <div class='flex justify-between items-center'>
+      <div class='flex items-center gap-2.5'>
+        <a href="#">
+          <img src="assets/svgs/leftArrow.svg" alt="left-arrow">
+        </a>
+        <p class='text-[1.25rem] font-semibold leading-[1.625rem] text-black'>Alle Profile anschauen</p>
+      </div>
+      <div class='flex gap-[2.125rem]'>
+        <button class='text-[1.25rem] font-semibold leading-[1.625rem] text-black py-3.5 px-[1.125rem] bg-[#F6FE92] rounded-lg'>Abbrechen</button>
+        <button class='text-[1.25rem] font-semibold leading-[1.625rem] text-black py-3.5 px-[1.125rem] bg-[#F6FE92] rounded-lg'>Speichern</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
