@@ -13,6 +13,13 @@
     body {
       font-family: "Syne";
     }
+    input[type="search"]::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+    }
+    .remove-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    }
   </style>
 </head>
 <body>
@@ -52,7 +59,175 @@
         </div>
       </div>
     </div>
-    <div class='flex-1 bg-[#FAFBFF] min-h-screen'>this is page content</div>
+    <div class='flex-1 bg-[#FAFBFF] h-screen overflow-auto pt-10 px-[3.5625rem] pb-[5.8125rem] remove-scrollbar'>
+      <div class='flex justify-between items-center mb-[4.6875rem]'>
+        <span class='text-2xl font-medium leading-[1.8rem] text-black'>Hi Name 👋🏼,</span>
+        <div class='flex items-center gap-6'>
+          <div class='flex gap-2 px-1.5 py-2.5 border border-[#E2E8F0] rounded-[0.9375rem] bg-white'>
+            <img src="assets/svgs/searchIcon.svg" alt="search">
+            <input type="search" name="" id="" placeholder='Suche' class='bg-transparent flex-grow'>
+          </div>
+          <button class='flex gap-2 items-center'>
+            <img src="assets/svgs/personIcon.svg" alt="personIcon">
+            Sign out
+          </button>
+          <div>
+            <img src="assets/svgs/bellIcon.svg" alt="bellIcon">
+          </div>
+          <div>
+            <div class='flex justify-center items-center w-8 h-[1.875rem] rounded-lg bg-[#715E98]'>
+              <img src="assets/svgs/downArrow.svg" alt="downArrow">
+            </div>
+          </div>
+          <img src="assets/images/avatar.png" alt="avatar">
+        </div>
+      </div>
+      <div class='relative'>
+        <h2 class='text-[1.875rem] font-bold leading-9 text-black mb-5'>Profil bearbeiten</h2>
+        <div class='w-full h-[17.625rem] bg-[#715E98]'></div>
+        <div class='flex justify-between items-center absolute bottom-[-6.625rem] w-full pl-[3.125rem] z-10'>
+          <div class='flex items-center gap-[1.5625rem]'>
+            <div class='w-[8.5625rem] h-[8.5625rem] rounded-full border-8 border-white'>
+              <img src="assets/images/avatar.png" alt="avatar" class='w-full h-full'>
+            </div>
+            <span class='text-2xl font-bold leading-[1.8rem] text-black'>Name</span>
+            <a href="" class='w-[2.375rem] h-[2.375rem] bg-white rounded-full text-white flex items-center justify-center '>
+              <img src="assets/svgs/linkedIn.svg" alt="linkedIn" class='w-5 h-5'>
+            </a>
+          </div>
+          <button class='flex items-center justify-center w-20 h-10 border border-[#D9DADE] rounded-lg text-sm font-medium leading-[1.1475rem] text-black'>Cancel</button>
+        </div>
+      </div>
+      <div class='px-16 mt-[6.8125rem] flex justify-between'>
+        <button class='flex items-center justify-center w-[6.875rem] h-11 rounded-lg bg-[#715E98] text-sm font-normal leading-[1.625rem] text-white'>Mein Profil</button>
+        <div class='flex gap-[1.875rem]'>
+          <div>
+            <p class='text-sm font-medium leading-[1.05rem] text-black mb-3'>Wähle aus,  wonach du suchst</p>
+            <div class='pl-[1.5625rem] pr-3.5 border border-[#E5E5ED] rounded-lg text-xs font-normal leading-6 flex items-center w-[19.25rem] h-11'>
+              Was suchst du auf der Plattform?
+              <div class='ml-auto'>
+                <img src="assets/svgs/downArrowDark.svg" alt=" downArrowDark">
+              </div>
+            </div>
+            <div class='pl-[1.5625rem] border border-[#E5E5ED] rounded-lg text-xs font-normal leading-6 flex items-center w-[19.25rem] h-11'>
+              Ich habe ein Startup und suche Mitgründer
+            </div>
+            <div class='pl-[1.5625rem] border border-[#E5E5ED] rounded-lg text-xs font-normal leading-6 flex items-center w-[19.25rem] h-11'>
+              Ich will bei einem Startup mitarbeiten
+            </div>
+          </div>
+          <div class='flex flex-col gap-2.5'>
+            <p class='mb-3 text-sm font-medium leading-[1.05rem] text-black'>Was bist du? <span class='font-normal'>(optional)</span></p>
+            <div class='flex items-center gap-2 text-sm font-normal leading-[1.05rem] text-[#768396] px-2'>
+              <input type="radio" id="female" name="Gender" value="FeMale" class='w-4 h-4'>
+              <label for="female">Female</label>
+            </div>
+            <div class='flex items-center gap-2 text-sm font-normal leading-[1.05rem] text-[#768396] px-2'>
+              <input type="radio" id="male" name="Gender" value="Male" class='w-4 h-4'>
+              <label for="male">Male</label>
+            </div>
+            <div class='flex items-center gap-2 text-sm font-normal leading-[1.05rem] text-[#768396] px-2'>
+              <input type="radio" id="nonbinary" name="Gender" value="NonBinary" class='w-4 h-4'>
+              <label for="nonbinary">Non-binary</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form action="">
+        <div class='flex gap-8 mt-16 pl-[7.5rem] mb-5'>
+          <div class='flex flex-col gap-2 w-full'>
+            <label for="vorname" class='text-sm font-medium leading-[1.05rem] text-black'>Vorname</label>
+            <input type="text" name="vorname" id="vorname" placeholder='Dein Vorname' class='h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 text-sm font-medium leading-[1.05rem] text-[#768396] outline-none bg-transparent'>
+          </div>
+          <div class='flex flex-col gap-2 w-full'>
+            <label for="nachname" class='text-sm font-medium leading-[1.05rem] text-black'>Nachname</label>
+            <input type="text" name='nachname' id='nachname' placeholder='Dein Nachname' class='h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 text-sm font-medium leading-[1.05rem] text-[#768396] outline-none bg-transparent'>
+          </div>
+          <div class='flex flex-col gap-2 w-full'>
+            <p class='text-sm font-medium leading-[1.05rem] text-black'>Geburtsdatum</p>
+            <div class='flex gap-[1.3125rem]'>
+              <select name="dd" id="" class='w-full h-[2.8125rem] bg-transparent rounded-lg border border-[#E5E5ED] px-1.5'>
+                <option value="01">dd</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+              </select>
+              <select name="mm" id="" class='w-full h-[2.8125rem] bg-transparent rounded-lg border border-[#E5E5ED] px-1.5'>
+                <option value="jan">mm</option>
+                <option value="feb">Feb</option>
+                <option value="mar">Mar</option>
+                <option value="apr">April</option>
+              </select>
+              <select name="yyyy" id="" class='w-full h-[2.8125rem] bg-transparent rounded-lg border border-[#E5E5ED] px-1.5'>
+                <option value="2001">yyyy</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class='flex gap-8 pl-[7.5rem] mb-5'>
+          <div class='flex flex-col gap-2 w-full'>
+            <label for="adresse" class='text-sm font-medium leading-[1.05rem] text-black'>Adresse</label>
+            <input type="text" name="adresse" id="adresse" placeholder='Straße, Nummer' class='h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 text-sm font-medium leading-[1.05rem] text-[#768396] outline-none bg-transparent'>
+          </div>
+          <div class='flex flex-col gap-2 w-full'>
+            <label for="postleitzahl" class='text-sm font-medium leading-[1.05rem] text-black'>Postleitzahl</label>
+            <input type="text" name='postleitzahl' id='postleitzahl' placeholder='PLZ' class='h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 text-sm font-medium leading-[1.05rem] text-[#768396] outline-none bg-transparent'>
+          </div>
+          <div class='flex flex-col gap-2 w-full'>
+            <label for="land" class='text-sm font-medium leading-[1.05rem] text-black'>Land</label>
+            <input type="text" name='land' id='land' placeholder='Land' class='h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 text-sm font-medium leading-[1.05rem] text-[#768396] outline-none bg-transparent'>
+          </div>
+        </div>
+        <div class='flex gap-8 pl-[7.5rem] mb-10'>
+          <div class='flex flex-col gap-[1.375rem] w-full'>
+            <div class='flex flex-col gap-2 w-full'>
+              <label for="mail" class='text-sm font-medium leading-[1.05rem] text-black'>Email</label>
+              <div class='h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 flex gap-4 items-center'>
+                <img src="assets/svgs/messageIcon.svg" alt="messageIcon">
+                <input type="email" name="mail" id="mail" placeholder='Deine Email' class='flex-grow text-sm font-medium leading-[1.05rem] text-[#768396] outline-none bg-transparent'>
+              </div>
+            </div>
+            <div class='flex flex-col gap-2 w-full'>
+              <label for="position" class='text-sm font-medium leading-[1.05rem] text-black'>Aktuelle Position</label>
+              <input type="text" name='position' id='position' placeholder='z.B. Product Designer' class='h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 text-sm font-medium leading-[1.05rem] text-[#768396] outline-none bg-transparent'>
+            </div>
+          </div>
+          <div class='flex flex-col gap-[1.375rem] w-full'>
+            <div class='flex flex-col gap-2 w-full'>
+              <label for="passwort" class='text-sm font-medium leading-[1.05rem] text-black'>Passwort</label>
+              <div class='h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 flex gap-4 items-center'>
+                <input type="password" name='passwort' id='passwort' placeholder='Passwort hinzufügen' class='flex-grow text-sm font-medium leading-[1.05rem] text-[#768396] outline-none bg-transparent'>
+                <button class='h-9 w-9 flex items-center justify-center bg-[#715E98] rounded-lg'>
+                  <img src="assets/svgs/editWhite.svg" alt="editWhite">
+                </button>
+              </div>
+            </div>
+            <div class='flex flex-col gap-2 w-full'>
+              <label for="startups" class='text-sm font-medium leading-[1.05rem] text-black'>Name des Startups</label>
+              <div class='h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 flex gap-4 items-center'>
+                <input type="text" name="startups" id="startups" placeholder='Name des Startups' class='flex-grow text-sm font-medium leading-[1.05rem] text-[#768396] outline-none bg-transparent'>
+                <div class='w-[2.375rem] h-[2.375rem] rounded-full bg-white flex items-center justify-center'>
+                  <img src="assets/svgs/socialMedia1.svg" alt="socialMedia" class='w-[1.125rem] h-[1.125rem]'>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='w-full'>
+            this is the last part
+          </div>
+        </div>
+        <div class='pl-[7.5rem] mb-[4.6875rem]'>
+          <textarea placeholder='Hier kannst du einen Text über dich schreiben' class='border border-[#E5E5ED] rounded-lg py-3.5 px-6 bg-transparent w-full h-[4.75rem]'></textarea>
+        </div>
+        <div class='flex gap-[1.125rem] justify-end'>
+          <button class='w-[8.125rem] h-9 flex items-center justify-center text-[0.9375rem] font-normal leading-[1.625rem] bg-transparent text-black rounded-lg border-2 border-[#E2DDFC]'>Abbrechen</button>
+          <button class='w-[8.125rem] h-9 flex items-center justify-center text-[0.9375rem] font-normal leading-[1.625rem] bg-black text-white rounded-lg'>Speichern</button>
+        </div>
+      </form>
+    </div>
   </div>
 </body>
 </html>
