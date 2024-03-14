@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+  <style>
+    body {
+      font-family: "Syne";
+    }
+    input[type="search"]::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+    }
+    .remove-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class='flex'>
+    <div class='pt-[2.25rem] px-[1.875rem] basis-[19.125rem] min-h-screen'>
+      <div class='flex justify-between items-center gap-20 mb-16 text-2xl font-bold text-black tracking-tighter leading-[1rem]'>
+        <div class='flex items-center gap-2.5'>
+          <img src="assets/svgs/logo.svg" alt="logo">
+          Startup Founders Hub
+        </div>
+        <img src="assets/svgs/backArrow.svg" alt="backArrow">
+      </div>
+      <ul class='flex flex-col gap-8 pb-8 border-b border-[#EEEEEE]'>
+        <li class='flex justify-between items-center'>
+          <div class='flex items-center gap-2 text-sm font-medium leading-[1.05rem] tracking-tighter text-[#9197B3]'>
+            <img src="assets/svgs/user.svg" alt="user">
+            Gespeicherte Anzeigen
+          </div>
+          <img src="assets/svgs/ArrowheadRight.svg" alt="ArrowheadRight">
+        </li>
+        <li class='flex justify-between items-center'>
+          <div class='flex items-center gap-2 text-sm font-medium leading-[1.05rem] tracking-tighter text-[#9197B3]'>
+            <img src="assets/svgs/messageQuestion.svg" alt="message-question">
+            Nachrichten/Bewerbungen
+          </div>
+          <img src="assets/svgs/ArrowheadRight.svg" alt="ArrowheadRight">
+        </li>
+      </ul>
+      <div class='mt-8'>
+        <span class='text-base font-medium leading-[1.05rem] text-[#B5B7C0] tracking-tighter'>RESSOURCEN</span>
+        <div class='flex justify-between items-center'>
+          <div class='flex items-center gap-2 text-sm font-medium leading-[1.05rem] tracking-tighter mt-4 text-[#9197B3]'>
+            <img src="assets/svgs/user.svg" alt="user">
+            Startup/Mitgründer Suche 
+          </div> 
+          <img src="assets/svgs/ArrowheadRight.svg" alt="ArrowheadRight">
+        </div>
+      </div>
+    </div>
+    <div class='flex-1 bg-[#FAFBFF] h-screen overflow-auto pt-10 px-[3.5625rem] pb-[5.8125rem] remove-scrollbar'>
+      <div class='flex justify-between items-center mb-[2.8125rem]'>
+        <span class='text-2xl font-medium leading-[1.8rem] text-black'>Hi Name 👋🏼,</span>
+        <div class='flex items-center gap-6'>
+          <div class='flex gap-2 px-1.5 py-2.5 border border-[#E2E8F0] rounded-[0.9375rem] bg-white'>
+            <img src="assets/svgs/searchIcon.svg" alt="search">
+            <input type="search" name="" id="" placeholder='Suche' class='bg-transparent flex-grow'>
+          </div>
+          <button class='flex gap-2 items-center'>
+            <img src="assets/svgs/personIcon.svg" alt="personIcon">
+            Sign out
+          </button>
+          <div>
+            <img src="assets/svgs/bellIcon.svg" alt="bellIcon">
+          </div>
+          <div>
+            <div class='flex justify-center items-center w-8 h-[1.875rem] rounded-lg bg-[#715E98]'>
+              <img src="assets/svgs/downArrow.svg" alt="downArrow">
+            </div>
+          </div>
+          <img src="assets/images/avatar.png" alt="avatar">
+        </div>
+      </div>
+      <div class='flex justify-end mb-5'>
+        <button class='w-[8.125rem] h-9 bg-[#E2DDFC] rounded-lg text-[0.9375rem] font-normal leading-[1.625rem] text-[#715E98]'>Bearbeiten</button>
+      </div>
+      <div class='relative'>
+        <h2 class='text-[1.875rem] font-bold leading-9 text-black mb-5'>Profil bearbeiten</h2>
+        <div class='w-full h-[17.625rem] bg-[#715E98]'></div>
+        <div class='flex justify-between items-center absolute bottom-[-6.625rem] w-full pl-[3.125rem] z-10'>
+          <div class='flex items-center gap-[1.5625rem]'>
+            <div class='w-[8.5625rem] h-[8.5625rem] rounded-full border-8 border-white'>
+              <img src="assets/images/avatar.png" alt="avatar" class='w-full h-full'>
+            </div>
+            <span class='text-2xl font-bold leading-[1.8rem] text-black'>Name</span>
+            <a href="" class='w-[2.375rem] h-[2.375rem] bg-white rounded-full text-white flex items-center justify-center '>
+              <img src="assets/svgs/linkedIn.svg" alt="linkedIn" class='w-5 h-5'>
+            </a>
+          </div>
+          <div class='flex items-center gap-1.5'>
+            💡
+            <div class='w-[17.25rem] h-9 flex item-center justify-center border border-[#E5E5ED] rounded-lg text-xs font-medium leading-6 text-[#715E98] py-1.5'>Ich habe ein Startup und suche Mitgründer</div>
+          </div>  
+        </div>
+      </div>
+      <div class='px-16 mt-[6.8125rem] flex justify-between relative'>
+        <button class='flex items-center justify-center w-[6.875rem] h-11 rounded-lg bg-[#715E98] text-sm font-normal leading-[1.625rem] text-white'>Mein Profil</button>
+        <img src="assets/svgs/starSave.svg" alt="starSave" class='w-[3.125rem] h-14 absolute -top-[2.375rem] right-0'>
+      </div>
+      <form action="">
+        <div class='flex gap-[2.8125rem] mt-[4.625rem] mb-10'>
+          <div class='flex flex-col gap-8'>
+            <input type="text" name="" id="" placeholder='Vorname' class='w-[17.25rem] h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 text-sm font-medium leading-[1.05rem] text-[#715E98] placeholder:text-[#715E98] outline-none bg-transparent'>
+            <input type="text" name="" id="" placeholder='PLZ/Ort' class='w-[17.25rem] h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 text-sm font-medium leading-[1.05rem] text-[#715E98] placeholder:text-[#715E98] outline-none bg-transparent'>
+            <input type="text" name="" id="" placeholder='Aktuelle Stellenbezeichnung' class='w-[17.25rem] h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 text-sm font-medium leading-[1.05rem] text-[#715E98] placeholder:text-[#715E98] outline-none bg-transparent'>
+          </div>
+          <div class='flex flex-col gap-8'>
+            <input type="text" name="" id="" placeholder='Alter' class='w-[17.25rem] h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 text-sm font-medium leading-[1.05rem] text-[#715E98] placeholder:text-[#715E98] outline-none bg-transparent'>
+            <input type="text" name="" id="" placeholder='Land' class='w-[17.25rem] h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 text-sm font-medium leading-[1.05rem] text-[#715E98] placeholder:text-[#715E98] outline-none bg-transparent'>
+            <div class='w-[17.25rem] h-[2.8125rem] border border-[#E1E4ED] rounded-lg px-3.5 flex gap-4 items-center'>
+              <input type="text" name="startups" id="startups" placeholder='Name des Startups' class='flex-grow text-sm font-medium leading-[1.05rem] text-[#715E98] placeholder:text-[#715E98] outline-none bg-transparent'>
+              <div class='w-[2.375rem] h-[2.375rem] rounded-full bg-white flex items-center justify-center'>
+                <img src="assets/svgs/socialMedia1.svg" alt="socialMedia" class='w-[1.125rem] h-[1.125rem]'>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='mb-[4.6875rem]'>
+          <textarea placeholder='About' class='text-[#715E98] placeholder:text-[#715E98] border border-[#E5E5ED] rounded-lg py-3.5 px-6 bg-white w-full h-[117px]'></textarea>
+        </div>
+        <div class='w-full h-px bg-[#715E98]'></div>
+        <div class='flex justify-center gap-7 mt-[6.0313rem]'>
+          <button class='w-[159px] h-[4.4375rem] flex items-center justify-center text-[0.9375rem] font-normal leading-[1.625rem] bg-[#E2DDFC] text-black rounded-lg px-1.5'>Dein Startup inserieren</button>
+          <button class='w-[159px] h-[4.4375rem] flex items-center justify-center text-[0.9375rem] font-normal leading-[1.625rem] bg-[#E2DDFC] text-black rounded-lg px-1.5'>Dich als Co-Founder inserieren</button>
+          <button class='w-[159px] h-[4.4375rem] flex items-center justify-center text-[0.9375rem] font-normal leading-[1.625rem] bg-transparent text-black rounded-lg border-2 border-[#E2DDFC] px-1.5'>Zu den Startup Inseraten</button>
+          <button class='w-[159px] h-[4.4375rem] flex items-center justify-center text-[0.9375rem] font-normal leading-[1.625rem] bg-transparent text-black rounded-lg border-2 border-[#E2DDFC] px-1.5'>Zu den Co-Founder Inseraten</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
