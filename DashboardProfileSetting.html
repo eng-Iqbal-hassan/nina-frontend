@@ -63,7 +63,7 @@
       <div class='flex justify-between items-center mb-[4.6875rem]'>
         <span class='text-2xl font-medium leading-[1.8rem] text-black'>Hi Name 👋🏼,</span>
         <div class='flex items-center gap-6'>
-          <div class='flex gap-2 px-1.5 py-2.5 border border-[#E2E8F0] rounded-[0.9375rem] bg-white'>
+          <div class='flex gap-2 px-1.5 py-2.5 border border-[#E2E8F0] rounded-[0.9375rem]'>
             <img src="assets/svgs/searchIcon.svg" alt="search">
             <input type="search" name="" id="" placeholder='Suche' class='bg-transparent flex-grow'>
           </div>
@@ -74,10 +74,14 @@
           <div>
             <img src="assets/svgs/bellIcon.svg" alt="bellIcon">
           </div>
-          <div>
-            <div class='flex justify-center items-center w-8 h-[1.875rem] rounded-lg bg-[#715E98]'>
+          <div class='relative'>
+            <button class='flex justify-center items-center w-8 h-[1.875rem] rounded-lg bg-[#715E98]'>
               <img src="assets/svgs/downArrow.svg" alt="downArrow">
-            </div>
+            </button>
+            <ul class='absolute right-0'>
+              <li class='flex items-center justify-center w-[9.8125rem] h-9 rounded-lg text-sm font-medium leading-[1.05rem] text-black border border-[#E5E5ED] shadow-[0_4px_4px_0_rgba(0, 0, 0, 0.25)]'>Meine Anzeigen</li>
+              <li class='text-white flex items-center justify-center w-[9.8125rem] h-9 rounded-lg text-sm font-medium leading-[1.05rem] bg-[#715E98]'>Profil bearbeiten</li>
+            </ul>
           </div>
           <img src="assets/images/avatar.png" alt="avatar">
         </div>
